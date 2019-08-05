@@ -27,5 +27,5 @@ package() {
   cd ${pkgdir}
   chmod -x usr/share/applications/deepin.com.wechat.desktop
   sed '30a\sed -i "s/deepin-wine/LANG=zh_CN.UTF-8 wine/" $1/drive_c/deepin/EnvInit.sh' -i opt/deepinwine/apps/Deepin-WeChat/run.sh
-  sed -i "s/\/opt\/deepinwine/LANG=zh_CN.UTF-8 \/opt\/deepinwine/" /opt/deepinwine/apps/Deepin-WeChat/run.sh
+  sed -i "s/\/opt\/deepinwine/LANG=zh_CN.UTF-8 \/opt\/deepinwine/" opt/deepinwine/apps/Deepin-WeChat/run.sh
 }
